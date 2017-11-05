@@ -51,7 +51,6 @@ tracer.addOpInterrupt(5,NOTIFIED_ADD_CONTACT)
 def NOTIFIED_ACCEPT_GROUP_INVITATION(op):
     #print op
     try:
-        sendMessage(op.param1, client.getContact(op.param2).displayName + "WELCOME to " + group.name)
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ACCEPT_GROUP_INVITATION\n\n")
@@ -126,11 +125,11 @@ def SEND_MESSAGE(op):
             if msg.contentType == 0:
                 #if "gname:" in msg.text:
 #--------------------------------------------------------------
-                if msg.text == "Mulai":
+                if msg.text == "AOH? Slave The Enemy!":
                     print "ok"
-                    _name = msg.text.replace("Mulai","")
+                    _name = msg.text.replace("AOH? Slave The Enemy!","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Kick By Farzain - zFz\nsaya tidak bertanggung jawab apabila grup anda rata karena bot ini, silahkan kalian tanya sendiri akun ini\nTerimakasih")
+                    sendMessage(msg.to,"Tangkis bor kalo bisa hhh~ ")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -147,7 +146,7 @@ def SEND_MESSAGE(op):
                             except:
                                 sendText(msg.to,"error")
 #-------------------------------------------------------------			
-		if msg.text == "Salken all":
+		if msg.text == "Hai":
                     start = time.time()
                     sendMessage(msg.to, "hehehe")
                     elapsed_time = time.time() - start
@@ -158,69 +157,12 @@ def SEND_MESSAGE(op):
                     sendMessage(msg.to,"2")
                     sendMessage(msg.to,"1")
                     sendMessage(msg.to,"Fuck Off")
-                    sendMessage(msg.to,"Ku mengejar bus yang mulai berjalan")
-                    sendMessage(msg.to,"Ku ingin ungkapkan kepada dirimu")
-                    sendMessage(msg.to,"Kabut dalam hatiku telah menghilang")
-                    sendMessage(msg.to,"Dan hal yang penting bagiku pun terlihat")
-                    sendMessage(msg.to,"Walaupun jawaban itu sebenarnya begitu mudah")
-                    sendMessage(msg.to,"Tetapi entah mengapa diriku melewatkannya")
-                    sendMessage(msg.to,"Untukku menjadi diri sendiri")
-                    sendMessage(msg.to,"Ku harus jujur, pada perasaanku")
-                    sendMessage(msg.to,"Ku suka dirimu ku suka")
-                    sendMessage(msg.to,"Ku berlari sekuat tenaga")
-                    sendMessage(msg.to,"Ku suka selalu ku suka")
-                    sendMessage(msg.to,"Ku teriak sebisa suaraku")
-                    sendMessage(msg.to,"Ku suka dirimu ku suka")
-                    sendMessage(msg.to,"Walau susah untukku bernapas")
-                    sendMessage(msg.to,"Tak akan ku sembunyikan")
-                    sendMessage(msg.to,"Oogoe daiyamondo~")
-                    sendMessage(msg.to,"Saat ku sadari sesuatu menghilang")
-                    sendMessage(msg.to,"Hati ini pun resah tidak tertahankan")
-                    sendMessage(msg.to,"Sekarang juga yang bisa ku lakukan")
-                    sendMessage(msg.to,"Merubah perasaan ke dalam kata kata")
-                    sendMessage(msg.to,"Mengapa sedari tadi")
-                    sendMessage(msg.to,"Aku hanya menatap langit")
-                    sendMessage(msg.to,"Mataku berkaca kaca")
-                    sendMessage(msg.to,"Berlinang tak bisa berhenti")
-                    sendMessage(msg.to,"Di tempat kita tinggal, didunia ini")
-                    sendMessage(msg.to,"Dipenuhi cinta, kepada seseorang")
-                    sendMessage(msg.to,"Ku yakin ooo ku yakin")
-                    sendMessage(msg.to,"Janji tak lepas dirimu lagi")
-                    sendMessage(msg.to,"Ku yakin ooo ku yakin")
-                    sendMessage(msg.to,"Akhirnya kita bisa bertemu")
-                    sendMessage(msg.to,"Ku yakin ooo ku yakin")
-                    sendMessage(msg.to,"Ku akan bahagiakan dirimu")
-                    sendMessage(msg.to,"Ku ingin kau mendengarkan")
-                    sendMessage(msg.to,"Oogoe daiyamondo~")
-                    sendMessage(msg.to,"Jika jika kamu ragu")
-                    sendMessage(msg.to,"Takkan bisa memulai apapun")
-                    sendMessage(msg.to,"Ungkapkan perasaanmu")
-                    sendMessage(msg.to,"Jujurlah dari sekarang juga")
-                    sendMessage(msg.to,"Jika kau bersuar")
-                    sendMessage(msg.to,"Cahaya kan bersinar")
-                    sendMessage(msg.to,"Ku suka dirimu ku suka")
-                    sendMessage(msg.to,"Ku berlari sekuat tenaga")
-                    sendMessage(msg.to,"Ku suka selalu ku suka")
-                    sendMessage(msg.to,"Ku teriak sebisa suaraku")
-                    sendMessage(msg.to,"Ku suka dirimu ku suka")
-                    sendMessage(msg.to,"Sampaikan rasa sayangku ini")
-                    sendMessage(msg.to,"Ku suka selalu ku suka")
-                    sendMessage(msg.to,"Ku teriakkan ditengah angin")
-                    sendMessage(msg.to,"Ku suka dirimu ku suka")
-                    sendMessage(msg.to,"Walau susah untuk ku bernapas")
-                    sendMessage(msg.to,"Tak akan ku sembunyikan")
-                    sendMessage(msg.to,"Oogoe daiyamondo~")
-                    sendMessage(msg.to,"Katakan dengan berani")
-                    sendMessage(msg.to,"Jika kau diam kan tetap sama")
-                    sendMessage(msg.to,"Janganlah kau merasa malu")
-                    sendMessage(msg.to,"“Suka” itu kata paling hebat!")
-                    sendMessage(msg.to,"“Suka” itu kata paling hebat!")
-                    sendMessage(msg.to,"“Suka” itu kata paling hebat!")
-                    sendMessage(msg.to,"Ungkapkan perasaanmu")
-                    sendMessage(msg.to,"Jujurlah dari sekarang juga..")
-                    sendMessage(msg.to,"SPAM IS DONE")
-                    sendMessage(msg.to,"Created By : Farzain - zFz")
-                    sendMessage(msg.to,"Subscribe My Channel : https://www.youtube.com/c/zFz48")
+                    sendMessage(msg.to,"kntl")
+                    sendMessage(msg.to,"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
+                    sendMessage(msg.to,"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
+                    sendMessage(msg.to,"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
+                    sendMessage(msg.to,"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttth")
+                    sendMessage(msg.to,"tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
 #-------------------------------------------------------------
                 if msg.text == "Tagall":
 		      group = client.getGroup(msg.to)
